@@ -1,0 +1,33 @@
+{
+  "offer": {
+    "name": "People 404™ Work Health Check",
+    "launch_price_usd": 3500,
+    "standard_price_usd": 5000,
+    "currency": "USD"
+  },
+  "booking": {
+    "status": "BOOKING LINK REQUIRED",
+    "provider": null,
+    "url": null,
+    "notes": "No booking provider is configured. Add a live scheduling link (e.g. Calendly, Cal.com, SavvyCal) and set 'url'. Then update the href of every element with data-cta=\"booking\" and the 'Book the Work Health Check' buttons in index.html, intake.html, and sample.html. Do NOT fake a provider."
+  },
+  "payment": {
+    "status": "PAYMENT LINK REQUIRED",
+    "provider": null,
+    "url": null,
+    "amount_usd": 3500,
+    "notes": "No payment provider is configured. Add a live checkout link (e.g. Stripe Payment Link, Square, PayPal) for the $3,500 launch price and set 'url'. Wire it into the booking/confirmation flow. Do NOT fake a provider."
+  },
+  "intake_form": {
+    "status": "FORM INTEGRATION REQUIRED",
+    "provider": null,
+    "action": null,
+    "notes": "The intake form in intake.html is not connected to a handler. Options: (1) Netlify Forms — add name/netlify/netlify-honeypot attributes and a hidden form-name input (see comment in intake.html); (2) Formspree/Basin — set the form 'action' to the endpoint; (3) your CRM/webhook. Until configured, submission is intentionally disabled so no data is silently dropped."
+  },
+  "founder": {
+    "status": "FOUNDER BIO REQUIRED",
+    "name": null,
+    "photo": null,
+    "notes": "Replace the founder section in index.html with real name, photo, and 1-2 credibility proof points."
+  }
+}

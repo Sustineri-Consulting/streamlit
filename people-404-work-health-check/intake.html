@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostic Intake — People 404™ Work Health Check</title>
+  <meta name="description" content="Request the People 404™ Work Health Check diagnostic intake." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="index.html">Sustineri <span>· People&nbsp;404™</span></a>
+      <span class="price-chip">Work Health Check — <b>$3,500</b> launch</span>
+      <a class="btn btn--primary" href="index.html#book" style="padding:9px 18px;">Book the Work Health Check</a>
+    </div>
+  </header>
+
+  <section class="hero" style="padding:60px 0 48px;">
+    <div class="container">
+      <span class="eyebrow">People 404™ · Diagnostic Intake</span>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem);">Request the Work Health Check</h1>
+      <p class="promise">Tell us where work feels strained. We review every intake for fit before booking — this is the first step, not a commitment to buy.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="notice">
+        <b>FORM INTEGRATION REQUIRED</b> — this intake is not yet wired to a backend or form service.
+        Connect the form's <code>action</code> to your form handler (e.g. Netlify Forms, Formspree, or your CRM).
+        See <code>config/booking-payment.config.json</code> and the README. This form does not submit anywhere yet and no data is transmitted.
+      </div>
+
+      <!--
+        To enable Netlify Forms: add  name="people-404-intake"  netlify  netlify-honeypot="bot-field"
+        to the <form> tag below and add a hidden input <input type="hidden" name="form-name" value="people-404-intake" />.
+        Until a real handler is configured, submission is disabled to avoid faking a working form.
+      -->
+      <form class="form-grid" action="#" method="post" onsubmit="event.preventDefault(); document.getElementById('intake-pending').scrollIntoView({behavior:'smooth'});" aria-describedby="intake-pending">
+
+        <div class="field">
+          <label for="org">Organization name <span class="req">*</span></label>
+          <input id="org" name="organization" type="text" required autocomplete="organization" />
+        </div>
+        <div class="field">
+          <label for="name">Your name <span class="req">*</span></label>
+          <input id="name" name="buyer_name" type="text" required autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label for="title">Your title <span class="req">*</span></label>
+          <input id="title" name="buyer_title" type="text" required autocomplete="organization-title" />
+        </div>
+        <div class="field">
+          <label for="email">Contact email <span class="req">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="size">Company size <span class="req">*</span></label>
+          <select id="size" name="company_size" required>
+            <option value="" selected disabled>Select…</option>
+            <option>1–10</option>
+            <option>11–50</option>
+            <option>51–200</option>
+            <option>201–500</option>
+            <option>500+</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="industry">Industry <span class="req">*</span></label>
+          <input id="industry" name="industry" type="text" required />
+        </div>
+
+        <div class="field field--full">
+          <label for="reason">Main reason for requesting the Work Health Check <span class="req">*</span></label>
+          <textarea id="reason" name="reason" required placeholder="What prompted you to look into this now?"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label for="strain">Current operational strain</label>
+          <textarea id="strain" name="operational_strain" placeholder="Where does work feel hardest right now?"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="ai">AI adoption status</label>
+          <select id="ai" name="ai_adoption_status">
+            <option value="" selected disabled>Select…</option>
+            <option>Not started</option>
+            <option>Exploring</option>
+            <option>Piloting</option>
+            <option>Actively deploying</option>
+            <option>Scaling / mature</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="growth">Growth pressure</label>
+          <select id="growth" name="growth_pressure">
+            <option value="" selected disabled>Select…</option>
+            <option>Low — stable</option>
+            <option>Moderate — steady growth</option>
+            <option>High — scaling fast</option>
+            <option>Restructuring / transition</option>
+          </select>
+        </div>
+
+        <div class="field field--full">
+          <label for="burnout">Burnout or turnover signals</label>
+          <textarea id="burnout" name="burnout_turnover" placeholder="Any signs of burnout, turnover, or people carrying too much?"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label for="roles">Role clarity issues</label>
+          <textarea id="roles" name="role_clarity" placeholder="Where is ownership unclear, overlapping, or concentrated in one person?"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label for="knowledge">Knowledge transfer issues</label>
+          <textarea id="knowledge" name="knowledge_transfer" placeholder="Where does critical know-how live in too few heads?"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label for="process">Process breakdowns</label>
+          <textarea id="process" name="process_breakdowns" placeholder="Where do handoffs get missed or work fall through?"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label for="decisions">Decision bottlenecks</label>
+          <textarea id="decisions" name="decision_bottlenecks" placeholder="Where does work stall waiting on a decision or approval?"></textarea>
+        </div>
+
+        <div class="field field--full">
+          <label for="comms">Communication gaps</label>
+          <textarea id="comms" name="communication_gaps" placeholder="Where does information not reach the people who need it?"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="urgency">Urgency level</label>
+          <select id="urgency" name="urgency">
+            <option value="" selected disabled>Select…</option>
+            <option>Exploring — no fixed timeline</option>
+            <option>Within a quarter</option>
+            <option>Within 30 days</option>
+            <option>Urgent — actively strained</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="outcome">Desired outcome</label>
+          <input id="outcome" name="desired_outcome" type="text" placeholder="What would make this worth it?" />
+        </div>
+
+        <div class="field field--full">
+          <div class="checkbox-row">
+            <input id="consent" name="consent_followup" type="checkbox" required />
+            <label for="consent" style="font-weight:400;">
+              I consent to be contacted with follow-up about the People 404™ Work Health Check. <span class="req">*</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="field field--full">
+          <button class="btn btn--navy" type="submit">Submit diagnostic intake</button>
+        </div>
+
+        <div class="field field--full" id="intake-pending" role="status" aria-live="polite">
+          <div class="notice">
+            <b>SUBMISSION PENDING INTEGRATION</b> — your entries are not sent anywhere yet.
+            Once a form handler is connected, this will deliver your intake to the People 404™ team.
+            In the meantime, use the <a href="index.html#book">Book the Work Health Check</a> path or contact the team directly.
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="brand" href="index.html">Sustineri <span>· People 404™</span></a>
+      <p style="max-width:none;margin:0;">
+        <a href="index.html">Offer</a> &nbsp;·&nbsp;
+        <a href="intake.html">Diagnostic intake</a> &nbsp;·&nbsp;
+        <a href="sample.html">Sample summary</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

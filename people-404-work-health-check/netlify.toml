@@ -1,0 +1,39 @@
+# Netlify deployment config for the People 404™ Work Health Check offer site.
+# This is a plain static site — no build step required.
+
+[build]
+  # The site's publish directory is this folder itself. When deploying only this
+  # subdirectory, set Netlify's "Base directory" to people-404-work-health-check
+  # and "Publish directory" to "." (or publish = "people-404-work-health-check"
+  # from the repo root).
+  publish = "."
+  command = ""
+
+# Security + caching headers (accessibility/perf basics; no tracking added)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Friendly routes
+[[redirects]]
+  from = "/offer"
+  to = "/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/intake"
+  to = "/intake.html"
+  status = 301
+
+[[redirects]]
+  from = "/sample"
+  to = "/sample.html"
+  status = 301
