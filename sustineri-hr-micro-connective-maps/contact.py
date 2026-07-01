@@ -19,7 +19,7 @@ maps = [
     ),
     (
         "02",
-        "Unlimited PTO — One Problem, Another Created",
+        "Unlimited PTO Creates a New Problem",
         "sustineri_hr_map_02_unlimited-pto.png",
     ),
     (

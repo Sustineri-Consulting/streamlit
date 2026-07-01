@@ -11,6 +11,7 @@ Editorial, connective, high-signal. Thin/medium connectors, geometric nodes.
 """
 
 import html
+import math
 
 # ---- Brand palette ---------------------------------------------------------
 NAVY = "#012564"
@@ -201,6 +202,45 @@ DEFS = f"""
 """
 
 
+# ---- Watermark -------------------------------------------------------------
+
+
+def watermark(cx=884, cy=796, r=150):
+    """Subtle Sustineri connective-emblem watermark for the lower-right field.
+
+    Drawn immediately after the background so every opaque node/panel paints
+    over it — it only surfaces faintly in empty background regions.
+    """
+    pts = [
+        (
+            cx + r * math.cos(math.radians(-90 + k * 60)),
+            cy + r * math.sin(math.radians(-90 + k * 60)),
+        )
+        for k in range(6)
+    ]
+    spokes = "".join(
+        f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" '
+        f'stroke="{NAVY}" stroke-width="2"/>'
+        for x, y in pts
+    )
+    ring_edges = "".join(
+        f'<line x1="{pts[k][0]:.1f}" y1="{pts[k][1]:.1f}" '
+        f'x2="{pts[(k + 1) % 6][0]:.1f}" y2="{pts[(k + 1) % 6][1]:.1f}" '
+        f'stroke="{NAVY}" stroke-width="1.6"/>'
+        for k in range(6)
+    )
+    dots = "".join(
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="{NAVY}"/>' for x, y in pts
+    )
+    return (
+        f'<g opacity="0.05">'
+        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{NAVY}" stroke-width="2"/>'
+        f"{ring_edges}{spokes}{dots}"
+        f'<circle cx="{cx}" cy="{cy}" r="13" fill="{GOLD}"/>'
+        f"</g>"
+    )
+
+
 # ---- Page template ---------------------------------------------------------
 
 
@@ -226,6 +266,7 @@ def page(num, headline_lines, subline, map_svg):
 <svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">
   {DEFS}
   <rect x="0" y="0" width="{W}" height="{H}" fill="{BG}"/>
+  {watermark()}
   <!-- header -->
   <text x="70" y="60" font-size="19" font-weight="700" fill="{STEEL}"
      letter-spacing="3.2" font-family="Liberation Sans, Arial, sans-serif">{kicker}</text>

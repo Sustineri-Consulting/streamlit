@@ -27,7 +27,10 @@ was created and used: **`sustineri-hr-micro-connective-maps`**.
 | Neutral BG | `#f6f7f9` | very light background |
 
 Consistent across all five: header (kicker + map index), headline, subline, gold rule,
-centered connective map, navy caption band, `Sustineri` footer with tagline.
+centered connective map, navy caption band, `Sustineri` footer with tagline, and a subtle
+low-opacity (~5%) Sustineri connective-emblem watermark in the lower-right field. The
+watermark is drawn behind all content, so opaque nodes and panels paint over it and it only
+surfaces faintly in empty background — visible as a brand mark, never interfering with reading.
 
 ## Files
 
@@ -71,7 +74,7 @@ and "visible accountability lands here."
 
 ---
 
-## Map 02 — Unlimited PTO Solves One Problem and Creates Another
+## Map 02 — Unlimited PTO Creates a New Problem
 
 **Logic.** A left-to-right cause chain (Cost/Liability Pressure → Leadership Decision →
 Unlimited PTO Policy) then branches downward. The policy sets Employee Expectation and
@@ -86,8 +89,8 @@ practice."
 > on HR to interpret and enforce. A policy is not a system. The friction it creates is
 > structural, not personal.
 
-**Alt text.** Flow-style connective map titled "Unlimited PTO Solves One Problem and Creates
-Another." Top row: Cost / Liability Pressure → Leadership Decision → Unlimited PTO Policy.
+**Alt text.** Flow-style connective map titled "Unlimited PTO Creates a New Problem."
+Top row: Cost / Liability Pressure → Leadership Decision → Unlimited PTO Policy.
 The policy branches down to Employee Expectation and Manager Discretion; these plus a
 Workload / Coverage Reality node converge on a gold-outlined Conflict / Friction node, which
 connects to an HR Enforcement & Interpretation node. A note reads "removes accrual
@@ -100,8 +103,9 @@ complexity → introduces ambiguity."
 **Logic.** A vertical spine from Frontline Work up to Boardroom/Strategy, with HR
 highlighted in the middle. A steel rail on the left ("information moves up") and a gold rail
 on the right ("decisions move down") show the two flows that never close into a loop. Gold
-break-markers on the spine tag the failure points: no feedback loop, signal loss, HR absorbs
-friction, translation gap. HR is literally caught in the middle of an open loop.
+break-markers on the spine tag the failure points (no feedback loop, signal loss, translation
+gap), and a callout beside the HR node names its cost directly — **"HR absorbs signal loss +
+decision fallout."** HR is literally caught in the middle of an open loop.
 
 **Caption.**
 > Information climbs. Decisions descend. But nothing closes the loop — so meaning degrades at
@@ -113,8 +117,8 @@ friction, translation gap. HR is literally caught in the middle of an open loop.
 stacked nodes from bottom to top: Frontline Work, Employee Experience, Supervisor, HR
 (highlighted), Operations, Leadership, Boardroom / Strategy. A steel upward arrow on the left
 is labeled "information moves up"; a gold downward arrow on the right is labeled "decisions
-move down." Gold markers on the spine tag "no feedback loop," "signal loss," "HR absorbs
-friction," and "translation gap."
+move down." Gold markers on the spine tag "no feedback loop," "signal loss," and "translation
+gap," and a callout beside the HR node reads "HR absorbs signal loss + decision fallout."
 
 ---
 
@@ -149,7 +153,9 @@ Acquisition, HR Business Partnering, Learning/Development. Right ("Workforce Arc
 navy/gold nodes): Workforce Architecture and Organizational Design rendered as distinct
 emphasis blocks, alongside Leadership Strategy and Finance/Cost Inputs. Dashed bridges connect
 the two panels — related, but a different colour, a different container: connected, not
-interchangeable.
+interchangeable. Inside the right panel, a solid gold connector runs from Finance/Cost Inputs
+up into Workforce Architecture, labeled **"cost shapes architecture"** — cost decisions shape
+the architecture, but they are not the same function.
 
 **Caption.**
 > HR delivery keeps the organization running. Workforce architecture decides what the
@@ -162,7 +168,8 @@ sit side by side. The left panel, labeled "HR Delivery," contains HR Operations,
 Acquisition, HR Business Partnering, and Learning / Development. The right panel, labeled
 "Workforce Architecture," contains Workforce Architecture and Organizational Design as
 highlighted navy/gold blocks, plus Leadership Strategy and Finance / Cost Inputs. Dashed lines
-bridge the two panels, labeled "connected · not interchangeable."
+bridge the two panels, labeled "connected · not interchangeable." A solid gold arrow runs from
+Finance / Cost Inputs up to Workforce Architecture, labeled "cost shapes architecture."
 
 ---
 

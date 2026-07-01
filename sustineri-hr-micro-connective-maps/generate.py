@@ -103,7 +103,7 @@ def map02():
     )
     return page(
         2,
-        ["Unlimited PTO Solves One Problem —", "and Creates Another"],
+        ["Unlimited PTO Creates", "a New Problem"],
         "How a simple policy turns into operational friction",
         body,
     )
@@ -156,8 +156,11 @@ def map03():
 
     marks = (
         breakdown(346, "no feedback loop")  # boardroom <-> leadership
-        + breakdown(530, "signal loss")  # ops <-> hr
-        + tag(710, 581, "HR absorbs friction", GOLD, "start", fs=18)  # at HR
+        # ops <-> hr signal-loss point: bare marker (label folded into HR callout below)
+        + f'<circle cx="{cx}" cy="524" r="6" fill="#fff" stroke="{GOLD}" stroke-width="3"/>'
+        # HR-node callout (two lines), centered on the HR node, clear of other tags
+        + tag(710, 570, "HR absorbs signal loss", GOLD, "start", fs=18)
+        + tag(710, 592, "+ decision fallout", GOLD, "start", fs=18)
         + breakdown(714, "translation gap")  # supervisor <-> employee exp
     )
 
@@ -281,10 +284,31 @@ def map05():
         540, 300, "CONNECTED · NOT INTERCHANGEABLE", GOLD, fs=18, italic=False
     )
 
+    # cost input → workforce architecture: a solid gold connector routed up the
+    # right-panel gutter (clears Organizational Design / Leadership Strategy).
+    fin, wa = right[3], right[0]
+    gx = rpx + rpw - 40  # gutter x
+    cost_link = (
+        f'<path d="M {fin.right:.1f} {fin.cy:.1f} '
+        f"L {gx - 12:.1f} {fin.cy:.1f} Q {gx:.1f} {fin.cy:.1f} {gx:.1f} {fin.cy - 12:.1f} "
+        f"L {gx:.1f} {wa.cy + 12:.1f} Q {gx:.1f} {wa.cy:.1f} {gx - 12:.1f} {wa.cy:.1f} "
+        f'L {wa.right:.1f} {wa.cy:.1f}" fill="none" stroke="{GOLD}" stroke-width="2.4" '
+        f'stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-gold)"/>'
+    )
+    cost_label = (
+        f'<text x="{gx + 15}" y="{(fin.cy + wa.cy) / 2:.0f}" '
+        f'transform="rotate(90 {gx + 15} {(fin.cy + wa.cy) / 2:.0f})" text-anchor="middle" '
+        f'font-size="15" font-style="italic" font-weight="600" fill="{GOLD}" '
+        f'font-family="Liberation Sans, Arial, sans-serif" letter-spacing="0.3">'
+        f"cost shapes architecture</text>"
+    )
+
     body = (
         panels
         + bridges
+        + cost_link
         + render_nodes(left + right)
+        + cost_label
         + bridge_label
         + band("Connected functions are not the same function.", 930)
     )
