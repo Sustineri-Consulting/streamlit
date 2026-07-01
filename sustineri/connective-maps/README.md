@@ -37,10 +37,14 @@ source/
 output/
   *_watermarked.png        # portrait 4:5, standard copy       (2160x2700 @2x)
   *_watermarked_alt.png    # square 1:1, standard copy          (2160x2160 @2x)
-  *_watermarked_sharp.png  # portrait 4:5, sharper/diagnostic   (2160x2700 @2x)
-  *_watermarked_tight.png  # square 1:1, fewer words / mobile   (2160x2160 @2x)
+  *_watermarked_sharp.png  # portrait 4:5, sharper/diagnostic   (2160x2700 @2x)  [provisional]
+  *_watermarked_tight.png  # square 1:1, fewer words / mobile   (2160x2160 @2x)  [provisional]
+  *_watermarked_brandv2.png     # portrait 4:5 — BRAND-COMPLIANT (real fonts/palette) [recommended]
+  *_watermarked_brandv2_alt.png # square 1:1   — BRAND-COMPLIANT                       [recommended]
+source/fonts_embedded.css # real brand fonts (Source Serif 4 / Public Sans / JetBrains Mono)
+source/brandkit_v2.css    # brand-compliant kit (flat surfaces, locked tokens, serif type)
 caption.md              # suggested LinkedIn caption
-CANONICAL_VALIDATION.md # ROOT validation + brand-deviation findings (READ FIRST)
+CANONICAL_VALIDATION.md # ROOT validation + brand-deviation findings + brandv2 status (READ FIRST)
 ```
 
 ## Brand kit (locked)

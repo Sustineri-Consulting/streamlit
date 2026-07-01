@@ -56,6 +56,38 @@ Validated the delivered PNGs against `Sustineri_Brand_Kit.md` §2–§6. Deviati
 pass/fail brand gate as-is. It is usable as a provisional concept for founder
 review; it is not brand-final.
 
+## Brand-compliant rebuild (brandv2) — status after founder direction
+
+Founder chose **"rebuild fully brand-compliant."** A brand-compliant set was produced
+(`*_brandv2*`) that loads the real design system extracted from ROOT:
+
+- **Fonts:** real brand families embedded from the header inject — **Source Serif 4**
+  (headlines), **Public Sans** (body), **JetBrains Mono** (eyebrows), Latin woff2
+  base64 in `source/fonts_embedded.css`. ✔ resolves deviation #2.
+- **Flat surfaces:** no gradients, no drop shadows; white cards, `1px solid --lgray`,
+  square corners; navy core + navy footer band. ✔ resolves deviation #3.
+- **Tokens:** only locked tokens (`--navy/--gold/--steel/--lgray/--paper/--stone`)
+  from `00_HEADER_INJECT.html`; dropped `#e6bb54` and ad-hoc grays. ✔ resolves #4/#5.
+- **Type system:** serif H1 + gold 64×2 rule, mono letter-spaced eyebrows, sans body,
+  serif zone titles, `SECTION · NN` mono indices. ✔ resolves #2.
+- **Wordmark:** the real serif **"Sustineri"** lockup (Source Serif 4), as the live
+  nav/footer render it — no invented "S" monogram. ✔ resolves the fabrication in #1.
+
+**One item still open (deviation #1, partial):** the protected **logo mark image**
+(`assets/sustineri-mark.png` / `sustineri-logo-trans.png`) could **not be exported**
+through the read-only Microsoft Graph connector (binary `/content` returns 400; no
+download URL). The brandv2 set therefore uses the **wordmark-only** lockup and leaves
+the mark slot open rather than fabricating one. To finish: composite the real
+`sustineri-mark.png` into the header/footer lockup (drop-in), or authorize a path to
+export the binary.
+
+Still outstanding regardless of art: **Brand Inception Gate** run, kit loaded by path
+in-session, and **tracker logging** (Master Output Index / Change Log) — these are
+ROOT-side governance steps, not repo steps.
+
+The earlier provisional set (`*_watermarked.png`, `_alt`, `_sharp`, `_tight`) is
+**retained, not deleted**. The `*_brandv2*` set is the brand-aligned recommendation.
+
 ## Recommended reconciliation (for founder decision — do not action without approval)
 
 - Rebuild via **`sustineri-house-ui`**, loading `Sustineri_Brand_Kit.md` by path,

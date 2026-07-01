@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="brandkit_v2.css" />
+<style>
+  /* Brand-compliant portrait — 1080 x 1350 (LinkedIn 4:5) */
+  html, body { width: 1080px; height: 1350px; }
+  .stage { width: 1080px; height: 1350px; }
+
+  .eyebrow { position: absolute; left: 64px; top: 56px; font-size: 12.5px; z-index: 4; }
+  .wordmark { position: absolute; right: 64px; top: 48px; z-index: 4; }
+  .wordmark .wm-name { font-size: 21px; }
+  .wordmark .wm-sub  { font-size: 10px; margin-top: 3px; }
+
+  .title   { position: absolute; left: 64px; top: 92px; width: 900px; font-size: 47px; z-index: 4; }
+  .hr-title{ position: absolute; left: 66px; top: 214px; width: 72px; z-index: 4; }
+  .subhead { position: absolute; left: 64px; top: 238px; width: 900px; font-size: 19px; z-index: 4; }
+
+  .zone { width: 430px; height: 300px; }
+  .zone .z-idx   { font-size: 12px; }
+  .zone .z-title { font-size: 22px; }
+  .zone .z-sub   { font-size: 13px; }
+  .zone .tag     { font-size: 14px; }
+  .zone .z-foot  { font-size: 13.5px; }
+
+  #zA { left: 64px;  top: 320px; }
+  #zB { left: 586px; top: 320px; }
+  #zD { left: 64px;  top: 774px; }
+  #zC { left: 586px; top: 774px; }
+
+  .core { left: 350px; top: 628px; width: 380px; height: 150px; padding: 0 28px; }
+  .core .c-eyebrow { font-size: 12px; }
+  .core .c-title   { font-size: 24px; }
+
+  .footer { display: block; left: 0; top: 1150px; width: 1080px; height: 200px; padding: 0; }
+  .footer .f-left  { position: absolute; left: 64px; top: 46px; }
+  .footer .f-right { position: absolute; right: 64px; top: 44px; }
+  .footer .f-name { font-size: 22px; line-height: 1.1; }
+  .footer .f-tag  { font-size: 15px; margin-top: 9px; color: var(--paper); }
+  .footer .f-rhead { font-size: 12px; margin-bottom: 8px; }
+  .footer .f-flow  { font-size: 12.5px; line-height: 1.65; letter-spacing: .3px; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <!-- ===== watermark + connectors ===== -->
+  <svg class="watermark" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="aS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#496699"/>
+      </marker>
+      <marker id="aG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#AB8834"/>
+      </marker>
+      <pattern id="grid" width="46" height="46" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="0" y2="46" stroke="#496699" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+
+    <!-- subtle brand texture behind the map -->
+    <rect x="64" y="300" width="952" height="774" fill="url(#grid)" opacity="0.16"/>
+
+    <!-- faint connective-node motif (systems mark, not a logo) -->
+    <g transform="translate(540 703)" opacity="0.06" fill="none" stroke="#012564">
+      <circle r="250" stroke-width="1.4"/>
+      <circle r="196" stroke-width="1.4"/>
+      <circle r="142" stroke-width="1.4"/>
+    </g>
+
+    <!-- radial connectors center <-> zones -->
+    <g stroke="#496699" stroke-width="1.6" stroke-dasharray="2 7" stroke-linecap="round" opacity="0.6">
+      <line x1="540" y1="703" x2="279" y2="470"/>
+      <line x1="540" y1="703" x2="801" y2="470"/>
+      <line x1="540" y1="703" x2="801" y2="924"/>
+      <line x1="540" y1="703" x2="279" y2="924"/>
+    </g>
+
+    <!-- narrative ring 1->2->3->4 -->
+    <g fill="none" stroke="#496699" stroke-width="3" stroke-linecap="round">
+      <line x1="502" y1="372" x2="574" y2="372" marker-end="url(#aS)"/>
+      <line x1="806" y1="636" x2="806" y2="760" marker-end="url(#aS)"/>
+      <line x1="578" y1="920" x2="506" y2="920" marker-end="url(#aS)"/>
+    </g>
+    <path d="M300 786 C 340 758, 372 742, 418 736" fill="none" stroke="#AB8834"
+          stroke-width="3.5" stroke-linecap="round" marker-end="url(#aG)"/>
+  </svg>
+
+  <!-- ===== header ===== -->
+  <div class="eyebrow">Sustineri Connective Map · Work Architecture Series</div>
+  <div class="wordmark">
+    <div class="wm-name">Sustineri</div>
+    <div class="wm-sub">Consulting Group</div>
+  </div>
+
+  <div class="title">AI Didn't Just Expose a Tech Problem. It Exposed an Unmapped Work Ecosystem.</div>
+  <span class="gold-rule hr-title"></span>
+  <div class="subhead">
+    The solution isn't more reactive policy. It's <b>connective mapping, work architecture,
+    and ecosystem-level redesign</b> — understanding the work system <b>before</b> scaling the tool.
+  </div>
+
+  <!-- ===== zones ===== -->
+  <div class="zone a" id="zA">
+    <div class="z-head">
+      <span class="z-idx">01</span>
+      <div>
+        <div class="z-title">Reactive HR Frame</div>
+        <div class="z-sub">What SHRM &amp; mainstream HR emphasized</div>
+      </div>
+    </div>
+    <div class="z-tags">
+      <span class="tag">Remote Work</span><span class="tag">DEIA</span>
+      <span class="tag">Employee Experience</span><span class="tag">Upskilling</span>
+      <span class="tag">AI Adoption</span><span class="tag">Compliance-First Policy</span>
+    </div>
+    <div class="z-foot">Trend-driven strategy — treating symptoms, not structure.</div>
+  </div>
+
+  <div class="zone b" id="zB">
+    <div class="z-head">
+      <span class="z-idx">02</span>
+      <div>
+        <div class="z-title">What Was Actually Missing</div>
+        <div class="z-sub">The unmapped layer beneath the trends</div>
+      </div>
+    </div>
+    <div class="z-tags">
+      <span class="tag">Work Architecture</span><span class="tag">Role Dependencies</span>
+      <span class="tag">Invisible Labor</span><span class="tag">Institutional Knowledge</span>
+      <span class="tag">Handoffs &amp; Bottlenecks</span><span class="tag">Vendor / Contractor Reliance</span>
+    </div>
+    <div class="z-foot">The live work ecosystem no one actually mapped.</div>
+  </div>
+
+  <div class="zone c" id="zC">
+    <div class="z-head">
+      <span class="z-idx">03</span>
+      <div>
+        <div class="z-title">What Broke Under AI</div>
+        <div class="z-sub">AI dropped into unmapped systems</div>
+      </div>
+    </div>
+    <div class="z-tags">
+      <span class="tag">Failed AI Rollouts</span><span class="tag">Quality Breakdowns</span>
+      <span class="tag">Job Loss &amp; Rework</span><span class="tag">Burnout</span>
+      <span class="tag">Fragile Operations</span><span class="tag">Ethical Failure</span>
+    </div>
+    <div class="z-foot">Symptom treatment mistaken for root-cause analysis.</div>
+  </div>
+
+  <div class="zone d" id="zD">
+    <div class="z-head">
+      <span class="z-idx">04</span>
+      <div>
+        <div class="z-title">The Solution Path</div>
+        <div class="z-sub">Map first, then scale</div>
+      </div>
+    </div>
+    <div class="z-tags">
+      <span class="tag">Connective Mapping</span><span class="tag">Task-Level Analysis</span>
+      <span class="tag">Critical-Role Mapping</span><span class="tag">Workflow Redesign</span>
+      <span class="tag">Human-in-the-Loop</span><span class="tag">Ecosystem Governance</span>
+    </div>
+    <div class="z-foot">Understand the system first, then scale responsibly.</div>
+  </div>
+
+  <!-- ===== core ===== -->
+  <div class="core">
+    <div class="c-eyebrow">The Real Solution</div>
+    <span class="c-rule"></span>
+    <div class="c-title">Map the Work Before<br/>You Scale the Tool</div>
+  </div>
+
+  <!-- ===== footer band ===== -->
+  <div class="footer">
+    <div class="f-left">
+      <div class="f-name">Sustineri Consulting Group</div>
+      <div class="f-tag">Find the friction. Map the system. Build the strategy.</div>
+    </div>
+    <div class="f-right">
+      <div class="f-rhead">Work Architecture Series</div>
+      <div class="f-flow">Reactive framing → Missing architecture<br/>→ Structural failure → Connective solution</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
