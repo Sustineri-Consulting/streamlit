@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1900" viewBox="0 0 1240 1900" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif">
+<defs>
+<linearGradient id="centerGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#023081"/><stop offset="1" stop-color="#012564"/></linearGradient>
+<linearGradient id="footerGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#012564"/><stop offset="1" stop-color="#02194a"/></linearGradient>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0b1b3a" flood-opacity="0.14"/></filter>
+</defs>
+<rect width="1240" height="1900" fill="#f6f7f9"/>
+<text x="620.0" y="76" font-size="21" font-weight="700" fill="#ab8834" text-anchor="middle" letter-spacing="4">CONNECTIVE MAPPING &#183; PEOPLE 404&#8482;</text>
+<text x="620.0" y="132" font-size="43" font-weight="800" fill="#012564" text-anchor="middle">Connective Mapping Starts Where the</text>
+<text x="620.0" y="182" font-size="43" font-weight="800" fill="#012564" text-anchor="middle">Work Actually Happens</text>
+<rect x="550.0" y="204" width="140" height="5" rx="2.5" fill="#e6bb54"/>
+<text x="620.0" y="250" font-size="22" font-weight="500" fill="#496699" text-anchor="middle">Start with the roles the system can&#8217;t function without &#8212; then map who depends on them,</text>
+<text x="620.0" y="280" font-size="22" font-weight="500" fill="#496699" text-anchor="middle">what they fix, and what breaks when that work is interrupted.</text>
+<circle cx="620.0" cy="790" r="232" fill="none" stroke="#dbdbdb" stroke-width="1.4" stroke-dasharray="2 7" opacity="0.9"/>
+<circle cx="620.0" cy="790" r="358" fill="none" stroke="#dbdbdb" stroke-width="1.4" stroke-dasharray="2 7" opacity="0.9"/>
+<circle cx="620.0" cy="790" r="488" fill="none" stroke="#dbdbdb" stroke-width="1.4" stroke-dasharray="2 7" opacity="0.9"/>
+<line x1="620.0" y1="790" x2="620.0" y2="558.0" stroke="#496699" stroke-width="1.6" opacity="0.5"/>
+<line x1="620.0" y1="790" x2="840.6" y2="718.3" stroke="#496699" stroke-width="1.6" opacity="0.5"/>
+<line x1="620.0" y1="790" x2="756.4" y2="977.7" stroke="#496699" stroke-width="1.6" opacity="0.5"/>
+<line x1="620.0" y1="790" x2="483.6" y2="977.7" stroke="#496699" stroke-width="1.6" opacity="0.5"/>
+<line x1="620.0" y1="790" x2="399.4" y2="718.3" stroke="#496699" stroke-width="1.6" opacity="0.5"/>
+<rect x="777.8" y="323.8" width="107.8" height="53.0" rx="26.5" ry="26.5" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="831.7" y="357.0" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Delays</text>
+<rect x="1025.9" y="642.4" width="139.8" height="78.0" rx="39.0" ry="39.0" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="1095.8" y="675.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Duplicate</text>
+<text x="1095.8" y="700.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">work</text>
+<rect x="931.7" y="1067.8" width="139.8" height="53.0" rx="26.5" ry="26.5" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="1001.5" y="1100.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Confusion</text>
+<rect x="566.1" y="1251.5" width="107.8" height="53.0" rx="26.5" ry="26.5" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="620.0" y="1284.7" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Rework</text>
+<rect x="179.2" y="1067.8" width="118.5" height="53.0" rx="26.5" ry="26.5" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="238.5" y="1100.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Burnout</text>
+<rect x="79.7" y="642.4" width="129.1" height="78.0" rx="39.0" ry="39.0" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="144.2" y="675.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Missed</text>
+<text x="144.2" y="700.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">handoffs</text>
+<rect x="327.7" y="311.3" width="161.0" height="78.0" rx="39.0" ry="39.0" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="408.3" y="344.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">Decision</text>
+<text x="408.3" y="369.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#012564" text-anchor="middle">bottlenecks</text>
+<rect x="544.8" y="393.0" width="150.4" height="78.0" rx="39.0" ry="39.0" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="620.0" y="426.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Leadership</text>
+<text x="620.0" y="451.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">decisions</text>
+<rect x="824.7" y="515.3" width="150.4" height="103.0" rx="51.5" ry="51.5" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="899.9" y="548.4" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Customer /</text>
+<text x="899.9" y="573.4" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">client</text>
+<text x="899.9" y="598.4" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">experience</text>
+<rect x="893.8" y="843.2" width="150.4" height="53.0" rx="26.5" ry="26.5" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="969.0" y="876.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Compliance</text>
+<rect x="705.5" y="1073.5" width="139.8" height="78.0" rx="39.0" ry="39.0" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="775.3" y="1106.7" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Payroll /</text>
+<text x="775.3" y="1131.7" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">finance</text>
+<rect x="389.5" y="1086.0" width="150.4" height="53.0" rx="26.5" ry="26.5" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="464.7" y="1119.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Operations</text>
+<rect x="195.8" y="843.2" width="150.4" height="53.0" rx="26.5" ry="26.5" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="271.0" y="876.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Technology</text>
+<rect x="270.2" y="527.8" width="139.8" height="78.0" rx="39.0" ry="39.0" fill="#496699" stroke="#2f4d70" stroke-width="1.5"/>
+<text x="340.1" y="560.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">Field</text>
+<text x="340.1" y="585.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff" text-anchor="middle">execution</text>
+<rect x="534.2" y="531.5" width="171.7" height="53.0" rx="26.5" ry="26.5" fill="#e6bb54" stroke="#ab8834" stroke-width="1.5"/>
+<text x="620.0" y="564.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">Fixes issues</text>
+<rect x="760.1" y="679.3" width="161.0" height="78.0" rx="39.0" ry="39.0" fill="#e6bb54" stroke="#ab8834" stroke-width="1.5"/>
+<text x="840.6" y="712.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">Moves</text>
+<text x="840.6" y="737.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">information</text>
+<rect x="697.1" y="926.2" width="118.5" height="103.0" rx="51.5" ry="51.5" fill="#e6bb54" stroke="#ab8834" stroke-width="1.5"/>
+<text x="756.4" y="959.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">Keeps</text>
+<text x="756.4" y="984.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">records</text>
+<text x="756.4" y="1009.3" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">clean</text>
+<rect x="413.8" y="938.7" width="139.8" height="78.0" rx="39.0" ry="39.0" fill="#e6bb54" stroke="#ab8834" stroke-width="1.5"/>
+<text x="483.6" y="971.8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">Supports</text>
+<text x="483.6" y="996.8" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">decisions</text>
+<rect x="334.8" y="679.3" width="129.1" height="78.0" rx="39.0" ry="39.0" fill="#e6bb54" stroke="#ab8834" stroke-width="1.5"/>
+<text x="399.4" y="712.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">Prevents</text>
+<text x="399.4" y="737.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#012564" text-anchor="middle">delays</text>
+<rect x="501.0" y="732.0" width="238" height="116" rx="16" fill="url(#centerGrad)" stroke="#ab8834" stroke-width="2.5" filter="url(#soft)"/>
+<text x="620.0" y="776" font-size="26" font-weight="800" fill="#ffffff" text-anchor="middle">Critical Function</text>
+<text x="620.0" y="806" font-size="26" font-weight="800" fill="#e6bb54" text-anchor="middle">Role</text>
+<text x="620.0" y="834" font-size="15" font-weight="500" fill="#c7d2e8" text-anchor="middle">The work the system depends on</text>
+<rect x="182.2" y="1302" width="20" height="20" rx="5" fill="#e6bb54" stroke="#ab8834" stroke-width="1.5"/>
+<text x="212.2" y="1318" font-size="20" font-weight="600" fill="#0d1b34" text-anchor="start">Daily work</text>
+<rect x="364.2" y="1302" width="20" height="20" rx="5" fill="#496699" stroke="#496699" stroke-width="1.5"/>
+<text x="394.2" y="1318" font-size="20" font-weight="600" fill="#0d1b34" text-anchor="start">Who / what depends on them</text>
+<rect x="725.4" y="1302" width="20" height="20" rx="5" fill="#eceef1" stroke="#496699" stroke-width="1.5" stroke-dasharray="3 4"/>
+<text x="755.4" y="1318" font-size="20" font-weight="600" fill="#0d1b34" text-anchor="start">What breaks when work stops</text>
+<text x="620.0" y="1402" font-size="27" font-weight="800" fill="#012564" text-anchor="middle">Same role. Two very different pictures.</text>
+<rect x="60" y="1430" width="530.0" height="340" rx="16" fill="#ffffff" stroke="#b9bfc9" stroke-width="2" filter="url(#soft)"/>
+<path d="M76,1430 h498.0 a16,16 0 0 1 16,16 v46 h-530.0 v-46 a16,16 0 0 1 16,-16 z" fill="#dbdbdb"/>
+<text x="325.0" y="1472" font-size="24" font-weight="800" fill="#54627a" text-anchor="middle">Formal Org Chart</text>
+<circle cx="100" cy="1528" r="5" fill="#b9bfc9"/>
+<text x="120" y="1534" font-size="21" font-weight="500" fill="#5a6478" text-anchor="start">Title</text>
+<circle cx="100" cy="1578" r="5" fill="#b9bfc9"/>
+<text x="120" y="1584" font-size="21" font-weight="500" fill="#5a6478" text-anchor="start">Department</text>
+<circle cx="100" cy="1628" r="5" fill="#b9bfc9"/>
+<text x="120" y="1634" font-size="21" font-weight="500" fill="#5a6478" text-anchor="start">Reporting line</text>
+<rect x="650.0" y="1430" width="530.0" height="340" rx="16" fill="#ffffff" stroke="#ab8834" stroke-width="3" filter="url(#soft)"/>
+<path d="M666.0,1430 h498.0 a16,16 0 0 1 16,16 v46 h-530.0 v-46 a16,16 0 0 1 16,-16 z" fill="#012564"/>
+<text x="915.0" y="1472" font-size="24" font-weight="800" fill="#ffffff" text-anchor="middle">Actual Work Chart</text>
+<circle cx="690.0" cy="1528" r="5" fill="#ab8834"/>
+<text x="710.0" y="1534" font-size="21" font-weight="600" fill="#0d1b34" text-anchor="start">Who depends on them</text>
+<circle cx="690.0" cy="1578" r="5" fill="#ab8834"/>
+<text x="710.0" y="1584" font-size="21" font-weight="600" fill="#0d1b34" text-anchor="start">What they fix</text>
+<circle cx="690.0" cy="1628" r="5" fill="#ab8834"/>
+<text x="710.0" y="1634" font-size="21" font-weight="600" fill="#0d1b34" text-anchor="start">What breaks without them</text>
+<circle cx="690.0" cy="1678" r="5" fill="#ab8834"/>
+<text x="710.0" y="1684" font-size="21" font-weight="600" fill="#0d1b34" text-anchor="start">Where the work really moves</text>
+<circle cx="620.0" cy="1600.0" r="30" fill="#012564" stroke="#ab8834" stroke-width="2.5"/>
+<path d="M609.0,1591.0 L629.0,1600.0 L609.0,1609.0" fill="none" stroke="#e6bb54" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="0" y="1810" width="1240" height="90" fill="url(#footerGrad)"/>
+<rect x="0" y="1810" width="1240" height="4" fill="#ab8834"/>
+<text x="620.0" y="1866" font-size="25" font-weight="700" fill="#ffffff" text-anchor="middle">Sustineri Consulting Group <tspan fill="#e6bb54">&#124;</tspan> <tspan fill="#e6bb54">People 404&#8482;</tspan></text>
+</svg>
