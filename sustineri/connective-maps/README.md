@@ -1,8 +1,21 @@
-# Sustineri — Connective Map Workflow
+# Sustineri — Connective Map Workflow (PROVISIONAL)
 
-Canonical, reusable pipeline for Sustineri Consulting **connective-map** social
-graphics (LinkedIn thought-leadership). Route all future connective maps through
-this workflow — do not fork a parallel design system.
+> ## ⚠️ PROVISIONAL CONNECTIVE MAP WORKFLOW
+> Created because **no existing workflow was found in this repo/workspace**.
+> A canonical Sustineri brand workflow **does exist in ROOT** and takes precedence
+> — see [`CANONICAL_VALIDATION.md`](./CANONICAL_VALIDATION.md).
+> **Do not merge / do not treat as canonical until validated by the founder.**
+>
+> Controlling authority (rank-1): `Sustineri_Brand_Kit.md` at
+> `00_System_Core/AI_Operating_System/07_Templates/Brand/`. The canonical builder
+> is the `sustineri-house-ui` skill, gated by the Brand Inception Gate. This repo
+> build did **not** load the kit by path or run the gate, and it carries known
+> brand deviations (invented logo, sans headline, gradients/shadows) documented in
+> the validation file. Reconcile before promotion.
+
+A provisional, reproducible pipeline for Sustineri **connective-map** social
+graphics (LinkedIn thought-leadership). It exists so the SHRM/AI post has a
+working asset now; it is a candidate for the ROOT system, not a replacement for it.
 
 ## What this is
 
@@ -19,10 +32,15 @@ source/
   render.sh           # headless-Chromium render step: render.sh <in.html> <out.png> <W> <H>
   *_connective_map.html      # portrait master (1080x1350, LinkedIn 4:5)  — working source
   *_connective_map_alt.html  # square alt    (1080x1080, LinkedIn 1:1)    — working source
+  *_connective_map_sharp.html # sharper/diagnostic copy variant (portrait) — working source
+  *_connective_map_tight.html # fewer-words mobile variant (square)   — working source
 output/
-  *_watermarked.png       # FINAL portrait deliverable (2160x2700 @2x)
-  *_watermarked_alt.png   # FINAL square alt deliverable (2160x2160 @2x)
+  *_watermarked.png        # portrait 4:5, standard copy       (2160x2700 @2x)
+  *_watermarked_alt.png    # square 1:1, standard copy          (2160x2160 @2x)
+  *_watermarked_sharp.png  # portrait 4:5, sharper/diagnostic   (2160x2700 @2x)
+  *_watermarked_tight.png  # square 1:1, fewer words / mobile   (2160x2160 @2x)
 caption.md              # suggested LinkedIn caption
+CANONICAL_VALIDATION.md # ROOT validation + brand-deviation findings (READ FIRST)
 ```
 
 ## Brand kit (locked)
@@ -37,6 +55,11 @@ caption.md              # suggested LinkedIn caption
 
 Fonts: Liberation Sans (body/headline), Liberation Serif (the "S" monogram mark).
 These are metric-compatible with Arial/Times and render identically headless.
+
+> **Deviation note:** the canonical kit specifies **serif headlines** and treats the
+> logo as a protected asset (no substituted wordmark/monogram). This provisional
+> build uses a sans headline and an invented mark — both flagged for reconciliation
+> in `CANONICAL_VALIDATION.md`.
 
 ## Watermark
 
