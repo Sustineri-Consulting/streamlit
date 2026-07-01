@@ -88,6 +88,48 @@ ROOT-side governance steps, not repo steps.
 The earlier provisional set (`*_watermarked.png`, `_alt`, `_sharp`, `_tight`) is
 **retained, not deleted**. The `*_brandv2*` set is the brand-aligned recommendation.
 
+## 2026-07-01 — Founder correction & final-candidate lock
+
+**Brand direction ACCEPTED by founder (Angeline Stephens).** brandv2 is the approved
+direction. Primary = portrait, Alt = square. Confirmations requested, answered honestly:
+
+1. **Visible logo is the real protected asset — ❌ NOT met (blocked).** The protected
+   mark (`assets/sustineri-mark.png` / `sustineri-logo-trans.png`) could not be exported
+   through the available **read-only** Microsoft Graph connector (binary `/content`
+   → `400 invalidRequest`; no download URL). No SVG exists; no inline base64 copy exists
+   in any readable text file (the archived `sustineri-brand-kit.html` is text-wordmark
+   only); the Canva brand-kit list is empty. brandv2 therefore uses the **official serif
+   "Sustineri" wordmark** (Source Serif 4, as the live nav/footer render it) as an
+   **interim** lockup, with the mark slot flagged. **The mark image must be composited
+   before publish** by a session with binary-export or write access. This asset is
+   **final-pending-logo**, not publish-final.
+2. **Watermark uses approved brand pattern only — ✔ met.** The background watermark is the
+   brand **hero-comp diagonal grid** pattern (per `00_HEADER_INJECT.html`
+   `.scg-hero-comp__grid`). The earlier concentric-ring motif (not a brand asset) was
+   **removed**. No logo asset is used as a watermark (kit forbids recolor/opacity-alter).
+3. **No invented "S" monogram / unofficial logo remains — ✔ met** in the final-candidate
+   (brandv2) set. The invented "S" roundel exists only in the ARCHIVED provisional set.
+   Note: brandv2 still shows the **wordmark** (see #1) — the official wordmark, not an
+   invented mark, but it is a stand-in until the protected mark image is dropped in.
+4. **Provisional version archived & marked non-canonical — ✔ met.**
+   `output/_ARCHIVED_provisional_noncanonical/` and
+   `source/_ARCHIVED_provisional_noncanonical/` each carry `DO_NOT_USE.md`.
+5. **brandv2 files are the only final candidates — ✔ met.** `output/` contains only the
+   two brandv2 PNGs; all v1/sharp/tight moved to the archive folder.
+6. **CANONICAL_VALIDATION updated — ✔ (this section).**
+
+### ROOT write-back — ❌ NOT possible in this session
+The founder requested writing outputs + appending tracker rows in the canonical ROOT
+(`.../00_System_Core/AI_Operating_System/`). This **cannot be performed here**:
+- The available Microsoft 365 connector is **read/search only** — it exposes no
+  file-create / upload / update capability for OneDrive/SharePoint.
+- The path given (`/Users/angeline/Library/CloudStorage/OneDrive-.../`) is a **local
+  macOS path**, not reachable from this cloud container.
+- GitHub write scope is limited to `sustineri-consulting/streamlit`.
+
+A ready-to-paste write-back payload (tracker rows + exact paths) is staged at
+`ROOT_WRITEBACK_PAYLOAD.md` for an authorized/write-enabled session to apply.
+
 ## Recommended reconciliation (for founder decision — do not action without approval)
 
 - Rebuild via **`sustineri-house-ui`**, loading `Sustineri_Brand_Kit.md` by path,
