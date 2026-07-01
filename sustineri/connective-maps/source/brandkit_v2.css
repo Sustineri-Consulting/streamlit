@@ -1,0 +1,99 @@
+/* =====================================================================
+   SUSTINERI Connective Map — BRAND-COMPLIANT kit (v2)
+   Conforms to the canonical Sustineri Claude Design Brand Kit
+   (07_Templates/Brand/Sustineri_Brand_Kit.md, D-BRAND-001) and mirrors the
+   live implementation in 00_HEADER_INJECT.html:
+     - fonts: Source Serif 4 (display) / Public Sans (body) / JetBrains Mono (eyebrow)
+     - flat surfaces: no gradients, no drop shadows
+     - serif headlines, mono letter-spaced eyebrows, gold rules
+     - locked tokens only (navy/gold/steel/lgray/paper/stone)
+   Real brand fonts are embedded via fonts_embedded.css (Latin woff2).
+   ===================================================================== */
+@import url("fonts_embedded.css");
+
+:root {
+  --serif: 'Source Serif 4', Georgia, serif;
+  --sans:  'Public Sans', system-ui, sans-serif;
+  --mono:  'JetBrains Mono', 'Courier New', monospace;
+  --navy:  #012564;
+  --gold:  #AB8834;
+  --steel: #496699;
+  --lgray: #DBDBDB;
+  --paper: #FAF8F4;
+  --stone: #F2EFE8;
+  --ink:   #0F1422;
+  --ink70: rgba(15,20,34,0.70);
+  --ink55: rgba(15,20,34,0.55);
+  --paper75: rgba(250,248,244,0.75);
+  --paper55: rgba(250,248,244,0.55);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { font-family: var(--sans); color: var(--ink); background: var(--paper);
+  -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+
+.stage { position: relative; overflow: hidden; background: var(--paper); }
+
+/* ---- Watermark / connector layer ---- */
+.watermark { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+
+/* ---- Typographic atoms (mirror header inject) ---- */
+.eyebrow { font-family: var(--mono); text-transform: uppercase; color: var(--gold);
+  font-weight: 600; letter-spacing: 1.8px; }
+.gold-rule { background: var(--gold); height: 2px; display: block; }
+
+.title { font-family: var(--serif); font-weight: 400; color: var(--navy);
+  line-height: 1.08; letter-spacing: -0.5px; }
+.subhead { font-family: var(--sans); color: var(--ink70); line-height: 1.55; }
+.subhead b { color: var(--navy); font-weight: 600; }
+
+/* ---- Brand lockup (real serif wordmark; mark image is a flagged slot) ---- */
+.wordmark { text-align: right; line-height: 1.08; }
+.wordmark .wm-name { font-family: var(--serif); font-weight: 500; color: var(--navy);
+  letter-spacing: 0.3px; }
+.wordmark .wm-sub { font-family: var(--mono); text-transform: uppercase; color: var(--steel);
+  letter-spacing: 1.6px; }
+
+/* ---- Zone cards: flat white, 1px lgray, square corners, NO shadow ---- */
+.zone { position: absolute; z-index: 2; background: #fff; border: 1px solid var(--lgray);
+  padding: 24px 26px 22px; display: flex; flex-direction: column; }
+.zone::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.zone .z-head { display: flex; gap: 14px; align-items: flex-start; }
+.zone .z-idx { font-family: var(--mono); color: var(--gold); font-weight: 600;
+  letter-spacing: 1.5px; padding-top: 4px; }
+.zone .z-title { font-family: var(--serif); font-weight: 500; color: var(--navy);
+  line-height: 1.08; letter-spacing: -0.2px; }
+.zone .z-sub { font-family: var(--sans); color: var(--steel); margin-top: 4px; }
+.zone .z-tags { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 9px; }
+.zone .tag { font-family: var(--sans); font-weight: 500; color: var(--navy);
+  background: var(--stone); border: 1px solid var(--lgray); border-radius: 2px;
+  padding: 7px 12px; line-height: 1; white-space: nowrap; }
+.zone .z-foot { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--lgray);
+  font-family: var(--sans); color: var(--ink70); }
+
+/* narrative accents — top bar only, palette-locked */
+.zone.a::before { background: var(--steel); }
+.zone.b::before { background: var(--navy); }
+.zone.c::before { background: var(--lgray); }
+.zone.d::before { background: var(--gold); }
+.zone.d .tag { background: #fff; border-color: var(--gold); }
+
+/* ---- Central node: solid navy, flat ---- */
+.core { position: absolute; z-index: 3; background: var(--navy); color: var(--paper);
+  border-top: 3px solid var(--gold); display: flex; flex-direction: column;
+  justify-content: center; align-items: center; text-align: center; }
+.core .c-eyebrow { font-family: var(--mono); text-transform: uppercase; color: var(--gold);
+  font-weight: 600; letter-spacing: 1.8px; }
+.core .c-rule { width: 40px; height: 2px; background: var(--gold); margin: 10px 0; }
+.core .c-title { font-family: var(--serif); font-weight: 400; color: var(--paper); line-height: 1.1; }
+
+/* ---- Footer: navy band ---- */
+.footer { position: absolute; z-index: 4; background: var(--navy); color: var(--paper);
+  display: flex; align-items: center; justify-content: space-between; }
+.footer .f-name { font-family: var(--serif); font-weight: 500; color: var(--paper);
+  letter-spacing: 0.3px; }
+.footer .f-tag { font-family: var(--serif); color: var(--paper75); }
+.footer .f-right { text-align: right; }
+.footer .f-rhead { font-family: var(--mono); text-transform: uppercase; color: var(--gold);
+  font-weight: 600; letter-spacing: 1.6px; }
+.footer .f-flow { font-family: var(--sans); color: var(--paper55); }

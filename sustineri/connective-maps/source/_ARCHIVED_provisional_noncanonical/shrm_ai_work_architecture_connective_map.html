@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="brandkit.css" />
+<style>
+  /* ---- Portrait master: 1080 x 1350 (LinkedIn 4:5) ---- */
+  html, body { width: 1080px; height: 1350px; }
+  .stage { width: 1080px; height: 1350px; }
+
+  .eyebrow { position: absolute; left: 60px; top: 54px; font-size: 15px; z-index: 4; }
+  .brandlock { position: absolute; right: 56px; top: 44px; z-index: 4;
+               display: flex; align-items: center; gap: 11px; }
+  .brandlock .bl-txt { text-align: right; line-height: 1.1; }
+  .brandlock .bl-name { font-weight: 800; color: var(--navy); font-size: 15px; letter-spacing: .02em; }
+  .brandlock .bl-sub  { font-weight: 700; color: var(--gold); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; }
+
+  .title   { position: absolute; left: 60px; top: 92px; width: 928px; font-size: 40px; z-index: 4; }
+  .subhead { position: absolute; left: 60px; top: 214px; width: 940px; font-size: 20px; z-index: 4; }
+
+  .zone { width: 430px; height: 300px; }
+  .zone .z-badge { font-size: 17px; }
+  .zone .z-title { font-size: 19px; }
+  .zone .z-sub   { font-size: 13.5px; }
+  .zone .chip    { font-size: 14.5px; }
+  .zone .z-foot  { font-size: 14px; }
+
+  #zA { left: 60px;  top: 300px; }
+  #zB { left: 590px; top: 300px; }
+  #zD { left: 60px;  top: 762px; }
+  #zC { left: 590px; top: 762px; }
+
+  .core { left: 350px; top: 612px; width: 380px; height: 148px; padding: 0 26px; }
+  .core .c-eyebrow { font-size: 13px; margin-bottom: 8px; }
+  .core .c-title   { font-size: 23px; }
+
+  .footer { left: 60px; top: 1150px; width: 960px; height: 120px; justify-content: space-between; }
+  .footer .f-left { display: flex; align-items: center; gap: 16px; }
+  .footer .f-name { font-size: 21px; }
+  .footer .f-tag  { font-size: 15px; margin-top: 3px; }
+  .footer .f-right { text-align: right; color: var(--steel); font-size: 12.5px; font-weight: 600;
+                     letter-spacing: .16em; text-transform: uppercase; line-height: 1.5; }
+  .rule.top { position: absolute; left: 60px; top: 1118px; width: 960px; height: 2px; z-index: 4;
+              background: linear-gradient(90deg, var(--gold) 0%, var(--line) 40%, var(--line) 100%); }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <!-- ============ WATERMARK + CONNECTOR LAYER ============ -->
+  <svg class="watermark" viewBox="0 0 1080 1350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="arwSteel" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#496699"/>
+      </marker>
+      <marker id="arwGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#ab8834"/>
+      </marker>
+    </defs>
+
+    <!-- faint diagonal wordmark watermark -->
+    <text x="540" y="720" text-anchor="middle" transform="rotate(-21 540 720)"
+          font-family="Liberation Sans, Arial, sans-serif" font-weight="700"
+          font-size="168" letter-spacing="14" fill="#012564" opacity="0.045">SUSTINERI</text>
+
+    <!-- roundel monogram watermark -->
+    <g opacity="0.07" transform="translate(540 686)">
+      <circle r="286" fill="none" stroke="#012564" stroke-width="10"/>
+      <circle r="262" fill="none" stroke="#ab8834" stroke-width="3"/>
+      <text x="0" y="112" text-anchor="middle" font-family="Liberation Serif, Georgia, serif"
+            font-weight="700" font-size="360" fill="#012564">S</text>
+    </g>
+
+    <!-- radial connectors: center <-> each zone (drawn behind cards) -->
+    <g stroke="#496699" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round" opacity="0.55">
+      <line x1="540" y1="686" x2="275" y2="450"/>
+      <line x1="540" y1="686" x2="805" y2="450"/>
+      <line x1="540" y1="686" x2="805" y2="912"/>
+      <line x1="540" y1="686" x2="275" y2="912"/>
+    </g>
+
+    <!-- narrative ring: A -> B -> C -> D -> core -->
+    <g fill="none" stroke="#496699" stroke-width="3.5" stroke-linecap="round">
+      <line x1="500" y1="356" x2="576" y2="356" marker-end="url(#arwSteel)"/>   <!-- A->B top gap -->
+      <line x1="806" y1="616" x2="806" y2="744" marker-end="url(#arwSteel)"/>   <!-- B->C right gap -->
+      <line x1="580" y1="905" x2="504" y2="905" marker-end="url(#arwSteel)"/>   <!-- C->D bottom gap -->
+    </g>
+    <path d="M300 772 C 340 742, 372 726, 418 720" fill="none" stroke="#ab8834"
+          stroke-width="4.5" stroke-linecap="round" marker-end="url(#arwGold)"/> <!-- D->core -->
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <div class="eyebrow">Sustineri Connective Map · Work Architecture Series</div>
+  <div class="brandlock">
+    <svg class="mark-roundel" width="40" height="40" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="#012564" stroke-width="5"/>
+      <circle cx="50" cy="50" r="39" fill="none" stroke="#ab8834" stroke-width="2"/>
+      <text x="50" y="70" text-anchor="middle" font-family="Liberation Serif, Georgia, serif"
+            font-weight="700" font-size="58" fill="#012564">S</text>
+    </svg>
+    <div class="bl-txt">
+      <div class="bl-name">Sustineri</div>
+      <div class="bl-sub">Consulting</div>
+    </div>
+  </div>
+
+  <div class="title">
+    AI Didn't Just Expose a Tech Problem.<br/>
+    It Exposed an <span class="accent">Unmapped Work Ecosystem.</span>
+  </div>
+  <div class="subhead">
+    The solution isn't more reactive policy. It's <b>connective mapping, work architecture,
+    and ecosystem-level redesign</b> — understanding the work system <b>before</b> scaling the tool.
+  </div>
+
+  <!-- ============ ZONE A — Reactive HR Frame ============ -->
+  <div class="zone a" id="zA">
+    <div class="z-head">
+      <div class="z-badge">1</div>
+      <div>
+        <div class="z-title">Reactive HR Frame</div>
+        <div class="z-sub">What SHRM &amp; mainstream HR emphasized</div>
+      </div>
+    </div>
+    <div class="z-list">
+      <span class="chip">Remote Work</span>
+      <span class="chip">DEIA</span>
+      <span class="chip">Employee Experience</span>
+      <span class="chip">Upskilling</span>
+      <span class="chip">AI Adoption</span>
+      <span class="chip">Compliance-First Policy</span>
+    </div>
+    <div class="z-foot">Trend-driven strategy — treating symptoms, not structure.</div>
+  </div>
+
+  <!-- ============ ZONE B — What Was Missing ============ -->
+  <div class="zone b" id="zB">
+    <div class="z-head">
+      <div class="z-badge">2</div>
+      <div>
+        <div class="z-title">What Was Actually Missing</div>
+        <div class="z-sub">The unmapped layer beneath the trends</div>
+      </div>
+    </div>
+    <div class="z-list">
+      <span class="chip">Work Architecture</span>
+      <span class="chip">Role Dependencies</span>
+      <span class="chip">Invisible Labor</span>
+      <span class="chip">Institutional Knowledge</span>
+      <span class="chip">Handoffs &amp; Bottlenecks</span>
+      <span class="chip">Vendor / Contractor Reliance</span>
+    </div>
+    <div class="z-foot">The live work ecosystem no one actually mapped.</div>
+  </div>
+
+  <!-- ============ ZONE C — What Broke ============ -->
+  <div class="zone c" id="zC">
+    <div class="z-head">
+      <div class="z-badge">3</div>
+      <div>
+        <div class="z-title">What Broke Under AI</div>
+        <div class="z-sub">AI dropped into unmapped systems</div>
+      </div>
+    </div>
+    <div class="z-list">
+      <span class="chip">Failed AI Rollouts</span>
+      <span class="chip">Quality Breakdowns</span>
+      <span class="chip">Job Loss &amp; Rework</span>
+      <span class="chip">Burnout</span>
+      <span class="chip">Fragile Operations</span>
+      <span class="chip">Ethical Failure</span>
+    </div>
+    <div class="z-foot">Symptom treatment mistaken for root-cause analysis.</div>
+  </div>
+
+  <!-- ============ ZONE D — Solution Path ============ -->
+  <div class="zone d" id="zD">
+    <div class="z-head">
+      <div class="z-badge">4</div>
+      <div>
+        <div class="z-title">The Solution Path</div>
+        <div class="z-sub">Map first, then scale</div>
+      </div>
+    </div>
+    <div class="z-list">
+      <span class="chip">Connective Mapping</span>
+      <span class="chip">Task-Level Analysis</span>
+      <span class="chip">Critical-Role Mapping</span>
+      <span class="chip">Workflow Redesign</span>
+      <span class="chip">Human-in-the-Loop</span>
+      <span class="chip">Ecosystem Governance</span>
+    </div>
+    <div class="z-foot">Understand the system first, then scale responsibly.</div>
+  </div>
+
+  <!-- ============ CENTRAL NODE ============ -->
+  <div class="core">
+    <div class="c-eyebrow">The Real Solution</div>
+    <div class="c-title">Map the Work Before<br/>You Scale the Tool</div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="rule top"></div>
+  <div class="footer">
+    <div class="f-left">
+      <svg class="mark-roundel" width="52" height="52" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#012564" stroke-width="5"/>
+        <circle cx="50" cy="50" r="39" fill="none" stroke="#ab8834" stroke-width="2"/>
+        <text x="50" y="70" text-anchor="middle" font-family="Liberation Serif, Georgia, serif"
+              font-weight="700" font-size="58" fill="#012564">S</text>
+      </svg>
+      <div>
+        <div class="f-name">Sustineri Consulting Group</div>
+        <div class="f-tag">Find the friction. Map the system. Build the strategy.</div>
+      </div>
+    </div>
+    <div class="f-right">Reactive framing&nbsp;→&nbsp;Missing architecture<br/>→&nbsp;Structural failure&nbsp;→&nbsp;Connective solution</div>
+  </div>
+
+</div>
+</body>
+</html>

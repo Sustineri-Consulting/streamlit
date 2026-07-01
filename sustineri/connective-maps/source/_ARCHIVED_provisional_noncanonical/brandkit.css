@@ -1,0 +1,159 @@
+/* =====================================================================
+   SUSTINERI CONSULTING — Connective Map Brand Kit
+   Locked visual language for social thought-leadership systems maps.
+   Reuse this file for all connective-map builds. Do not fork.
+   ===================================================================== */
+
+:root {
+  /* Locked brand palette */
+  --navy:  #012564;
+  --gold:  #ab8834;
+  --gold-bright: #e6bb54;
+  --steel: #496699;
+  --gray:  #dbdbdb;
+
+  /* Derived tints for surfaces */
+  --paper:      #f7f8fb;
+  --paper-2:    #eef1f7;
+  --navy-ink:   #012564;
+  --steel-soft: #eaeef5;
+  --gold-soft:  #f6efdd;
+  --line:       #cfd6e4;
+
+  --sans: "Liberation Sans", "DejaVu Sans", Arial, sans-serif;
+  --serif: "Liberation Serif", "Bitstream Charter", "DejaVu Serif", Georgia, serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: var(--sans);
+  color: var(--navy-ink);
+  background: var(--paper-2);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+.stage {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 50% 0%, #ffffff 0%, var(--paper) 55%, var(--paper-2) 100%);
+}
+
+/* ---- Brand mark (roundel monogram) ---------------------------------- */
+.mark-roundel { display: block; }
+
+/* ---- Watermark layer ------------------------------------------------ */
+.watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---- Typography ----------------------------------------------------- */
+.eyebrow {
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.title {
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.012em;
+  line-height: 1.06;
+}
+.title .accent { color: var(--gold); }
+.subhead {
+  color: var(--steel);
+  font-weight: 400;
+  line-height: 1.34;
+}
+.subhead b { color: var(--navy); font-weight: 700; }
+
+/* ---- Zone cards ----------------------------------------------------- */
+.zone {
+  position: absolute;
+  z-index: 2;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 18px 40px -24px rgba(1,37,100,0.45);
+  padding: 22px 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.zone .z-head { display: flex; align-items: center; gap: 12px; }
+.zone .z-badge {
+  flex: none;
+  display: grid; place-items: center;
+  width: 34px; height: 34px; border-radius: 9px;
+  font-weight: 800; color: #fff;
+  font-size: 17px;
+}
+.zone .z-title { font-weight: 800; letter-spacing: 0.02em; line-height: 1.05; }
+.zone .z-sub { color: var(--steel); font-weight: 500; margin-top: 3px; }
+.zone .z-list { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px 8px; }
+.zone .chip {
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 7px 13px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.zone .z-foot {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--steel);
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Zone accents by role in the narrative */
+.zone.a { border-top: 4px solid var(--steel); }
+.zone.a .z-badge { background: var(--steel); }
+.zone.a .z-title { color: var(--navy); }
+.zone.a .chip { background: var(--steel-soft); color: var(--navy); }
+
+.zone.b { border-top: 4px solid var(--navy); }
+.zone.b .z-badge { background: var(--navy); }
+.zone.b .z-title { color: var(--navy); }
+.zone.b .chip { background: #e7ecf6; color: var(--navy); }
+
+.zone.c { border-top: 4px solid #9aa3b4; }
+.zone.c .z-badge { background: #6b7486; }
+.zone.c .z-title { color: #55607a; }
+.zone.c .chip { background: #e8eaef; color: #48526a; }
+
+.zone.d { border-top: 4px solid var(--gold); }
+.zone.d .z-badge { background: var(--gold); }
+.zone.d .z-title { color: var(--gold); }
+.zone.d .chip { background: var(--gold-soft); color: #7a5f1f; }
+
+/* ---- Central node --------------------------------------------------- */
+.core {
+  position: absolute;
+  z-index: 3;
+  border-radius: 20px;
+  background: linear-gradient(160deg, #023081 0%, #012564 60%, #011a49 100%);
+  box-shadow: 0 24px 60px -18px rgba(1,37,100,0.65), 0 0 0 6px rgba(230,187,84,0.14);
+  border: 1px solid rgba(230,187,84,0.55);
+  color: #fff;
+  display: flex; flex-direction: column; justify-content: center;
+  text-align: center;
+}
+.core .c-eyebrow {
+  font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--gold-bright);
+}
+.core .c-title { font-weight: 800; line-height: 1.1; color: #fff; }
+
+/* ---- Footer signature ---------------------------------------------- */
+.footer { position: absolute; z-index: 4; display: flex; align-items: center; }
+.footer .f-name { font-weight: 800; color: var(--navy); letter-spacing: 0.01em; }
+.footer .f-tag { color: var(--steel); font-weight: 500; }
+.rule { background: var(--line); }
